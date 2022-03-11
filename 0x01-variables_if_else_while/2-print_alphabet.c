@@ -4,11 +4,12 @@
  */
 int main(void)
 /**
-* main - initiates the code
+*this code displays alphabets in small letters
+* main - outputs alphabets from "a" to "z"
 *
 * @argument: it's an integer
 *
-* Return: 0 for failure and 1 for success
+* Return: 0 for success
 */
 {
 	char c;
