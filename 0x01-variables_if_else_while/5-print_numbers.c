@@ -1,13 +1,15 @@
-#include<stdio.h>
-
-#include<math.h>
-
-main()
+#include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Sucsess)
+ */
+int main(void)
 {
-	int num;
+        int i;
 
-	scanf(“%d”,&num);
-	int digits=log10(num)+1;
-
-	printf("Number of digits=%d",digits);
+        for (i = 0; i < 10; i++)
+                printf("%d", i);
+        printf("\n");
+        return (0);
 }
