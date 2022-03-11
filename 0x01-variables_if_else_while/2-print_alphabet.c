@@ -4,7 +4,6 @@
  */
 int main(void)
 /**
-*this code displays alphabets in small letters
 * main - outputs alphabets from "a" to "z"
 *
 * @argument: it's an integer
@@ -13,7 +12,6 @@ int main(void)
 */
 {
 	char c;
-	
 	for (c = 'a'; c <= 'z'; ++c)
 		printf("%c", c);
 	printf("\n");
