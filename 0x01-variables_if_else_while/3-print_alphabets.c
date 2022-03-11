@@ -1,14 +1,14 @@
 #include <stdio.h>
-void main()
+/**
+ *displays alphabets
+ */
+int main(void)
 {
-	int ch;
-        /* print uppercase letters */
+        char c;
 
-	for (ch= ‘a’; ch<= ‘z’; ch++)
-             /* print lowercase letters */
-	for (ch= ‘A’; ch<= ‘Z’; cputchar(ch);
-			putchar("%c,"ch);
-			putchar("\n");
-	return(0);
-
+        for (c = 'a'; c <= 'z'; ++c)
+	for (c = 'A'; c <= 'Z'; ++c)
+                printf("%c", c);
+        printf("\n");
+        return (0);
 }
