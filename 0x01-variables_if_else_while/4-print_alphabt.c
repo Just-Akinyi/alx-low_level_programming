@@ -6,10 +6,15 @@
  */
 int main(void)
 {
-        char c;
+        int i;
 
-        for (c = 'a'; c <= 'z'; ++c)
-                printf("%c", c);
-        printf("\n");
+        for (i = 97; i < 123; i++)
+        {
+                if (i != 101 && i != 113)
+                {
+                        putchar(i);
+                }
+        }
+        putchar(10);
         return (0);
 }
