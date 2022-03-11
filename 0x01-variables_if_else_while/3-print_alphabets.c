@@ -4,7 +4,7 @@
  */
 int main(void)
 {
-        char ch;
+        char c;
 
         for (c = 'a'; c <= 'z'; ++c)
 		printf("%c", c);
