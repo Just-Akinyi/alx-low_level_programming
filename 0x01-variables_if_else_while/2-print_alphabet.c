@@ -1,11 +1,8 @@
 #include <stdio.h>
-/*
- * prints alphabets in lowercase "a..z"
- * using putchar()
- */
-int main()
+int main() 
 {
-	char (pv = "a", pv++, pv <= "z")
-	putchar ("%c\n",pv);
-	return (0);
+    char c;
+    for (c = 'a'; c <= 'z'; ++c)
+        printf("%c ", c);
+    return 0;
 }
