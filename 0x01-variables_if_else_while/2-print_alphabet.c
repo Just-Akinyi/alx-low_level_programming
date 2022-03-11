@@ -6,10 +6,13 @@
  */
 int main(void)
 {
-	char c;
+        int i = 97;
 
-	for (c = 'a'; c <= 'z'; ++c)
-		printf("%c", c);
-	printf("\n");
-	return (0);
+        while (i < 123)
+        {
+                putchar(i);
+                i++;
+        }
+        putchar(10);
+        return (0);
 }

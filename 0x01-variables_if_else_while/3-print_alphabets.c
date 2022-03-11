@@ -1,3 +1,9 @@
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+Chukwuma Daniel00:51
 #include <stdio.h>
 /**
  * main - Entry point
@@ -6,12 +12,12 @@
  */
 int main(void)
 {
-	char c;
+        int i, j;
 
-	for (c = 'a'; c <= 'z'; ++c)
-		printf("%c", c);
-	for (c = 'A'; c <= 'Z'; ++c)
-		printf("%c", c);
-	printf("\n");
-	return (0);
+        for (i = 97; i < 123; i++)
+                putchar(i);
+        for (j = 65; j < 91; j++)
+                putchar(j);
+        putchar(10);
+        return (0);
 }
