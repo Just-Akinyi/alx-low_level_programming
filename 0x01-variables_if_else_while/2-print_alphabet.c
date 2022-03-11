@@ -4,16 +4,15 @@
  */
 int main(void)
 /**
- * your code starts here
- * this if the main function
- */
+* main - initiates the code
+*
+* @argument: it's an integer
+*
+* Return: 0 for failure and 1 for success
+*/
 {
 	char c;
-/**
- * to display alphabets
- * prints "a-z"
- * in small letters
- */
+	
 	for (c = 'a'; c <= 'z'; ++c)
 		printf("%c", c);
 	printf("\n");
