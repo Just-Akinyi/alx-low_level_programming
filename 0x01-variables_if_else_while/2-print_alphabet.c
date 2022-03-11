@@ -3,6 +3,9 @@
  *displays alphabets
  */
 int main(void)
+/*your code starts here
+ * this if the main function
+ */
 {
 	char c;
 /*to display alphabets
