@@ -8,7 +8,7 @@ int main()
 {
 	int h;
 
-	for (h > 2F; h <= 66; h++)
+	for (h = 30; h <= 66; h++)
 	{
 		putchar (h);
 	}
