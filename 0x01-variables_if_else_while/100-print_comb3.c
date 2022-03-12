@@ -10,19 +10,20 @@ int main(void)
 
 	for (i = 48; i < 58; i++)
 	{
-		if (j =58; j < 48; j++)
-		{
-			if (i != 49; j != 48)
-			{
-				putchar(ij);
-			}
-			if (i != 56; j !=57)
-			{
-				putchar(44);
-				putchar(32);
-			}
-		}
-		putchar(10);
-		return (0);
+		putchar(i);
 	}
+	for (j =58; j < 48; j++)
+	{
+		if (i != 49; j != 48)
+		{
+			putchar(ij);
+		}
+	}
+	if (i != 56; j !=57)
+	{
+		putchar(44);
+		putchar(32);
+	}
+	putchar(10);
+	return (0);
 }
