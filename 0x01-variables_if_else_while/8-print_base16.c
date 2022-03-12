@@ -6,11 +6,11 @@
  */
 int main()
 {
-	int bh;
+	int h;
 
-	for (bh >= 30, bh <= 66; bh++)
+	for (h >= 30; h <= 66; h++)
 	{
-		putchar (bh);
+		putchar (h);
 	}
 	putchar(10);
 	return (0);
