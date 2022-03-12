@@ -14,12 +14,12 @@ int main(void)
 	}
 	for (j =58; j < 48; j++)
 	{
-		if (i != 49; j != 48)
+		if (i != 49 && j != 48)
 		{
 			putchar(ij);
 		}
 	}
-	if (i != 56; j !=57)
+	if (i != 56 && j !=57)
 	{
 		putchar(44);
 		putchar(32);
