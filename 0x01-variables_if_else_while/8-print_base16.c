@@ -1,17 +1,17 @@
 #include<stdio.h>
 /**
- * main - Entry point 
+ * main - Entry point
  *
  * Return:Always 0(Success)
  */
-int main()
+int main(void)
 {
 	int h;
 	int k;
 
-	for (h = 30; h <= 39; h++)
+	for (h = 48; h <= 57; h++)
 		putchar (h);
-	for (k = 61; k <= 66; k++)
+	for (k = 97; k <= 102; k++)
 		putchar (k);
 	putchar(10);
 	return (0);
