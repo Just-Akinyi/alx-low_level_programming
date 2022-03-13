@@ -12,13 +12,13 @@ int main(void)
 	{
 		for (w = 48; w < 58; w++)
 		{
-			putchar(v);
-			putchar(w);
-			putchar(32);
 			for (y = 48; y < 58; y++)
 			{
 				for (z = 48; z < 58; z++)
 				{
+					putchar(v);
+					putchar(w);
+					putchar(32);
 					putchar(y);
 					putchar(z);
 					if (y != 57 || z != 57)
