@@ -8,7 +8,7 @@ int main(void)
 {
 	int i, j, k;
 
-	for (i > 47; i < 58; i++)
+	for (i = 48; i < 58; i++)
 	{
 		for (j = i + 1; j < 58; j++)
 		{
@@ -17,7 +17,7 @@ int main(void)
 				putchar(i);
 				putchar(j);
 				putchar(k);
-				if (i < 56; j < 57; k < 58)
+				if (i < 56 || j < 57 || k < 58)
 				{
 					putchar(44);
 					putchar(32);
