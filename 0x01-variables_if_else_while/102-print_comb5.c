@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	int v[9], w, y, z;
+	int v, w, y, z;
 
-	for (v = 48; v < w; v++)
+	for (v = 48; v < 58; v++)
 	{
 		for (w = 48; w < 58; w++)
 		{
