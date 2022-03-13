@@ -8,9 +8,9 @@ int main(void)
 {
 	int y, z;
 
-	for (y=48; y < 58; y++)
+	for (y = 48; y < 58; y++)
 	{
-		for (z = i+i; z < 58; z++)
+		for (z = 48; z < 58; z++)
 		{
 			putchar(y);
 			putchar(z);
@@ -22,4 +22,5 @@ int main(void)
 		}
 	}
 	putchar(10);
-	return (0);
+	return (0)i;
+}
