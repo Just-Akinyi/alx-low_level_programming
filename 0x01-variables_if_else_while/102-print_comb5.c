@@ -21,7 +21,7 @@ int main(void)
 					putchar(32);
 					putchar(y);
 					putchar(z);
-					if (y != 57 || z != 57)
+					if (v != 57 || w != 56 || y != 57 || z != 57)
 					{
 						putchar(44);
 						putchar(32);
