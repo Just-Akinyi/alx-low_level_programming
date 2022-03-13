@@ -8,9 +8,9 @@ int main(void)
 {
 	int v, w, y, z;
 
-	for v = 48
+	for (v = 48)
 	{
-		for w = 48
+		for (w = 48)
 		{
 			for (y = 48; y < 58; y++)
 			{
@@ -21,10 +21,12 @@ int main(void)
 					putchar(32);
 					putchar(y);
 					putchar(z);
-			if (y != 57 || z != 57)
-			{
-				putchar(44);
-				putchar(32);
+					if (y != 57 || z != 57)
+					{
+						putchar(44);
+						putchar(32);
+					}
+				}
 			}
 		}
 	}
