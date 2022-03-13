@@ -10,11 +10,11 @@ int main(void)
 
 	for (v = 48; v < 58; v++)
 	{
-		for (w = 48; w < 58; w++)
+		for (w = 48; w < 57; w++)
 		{
 			for (y = 48; y < 58; y++)
 			{
-				for (z = 48; z < 58; z++)
+				for (z = 49; z < 58; z++)
 				{
 					putchar(v);
 					putchar(w);
