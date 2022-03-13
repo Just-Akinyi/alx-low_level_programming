@@ -8,7 +8,6 @@ int main(void)
 {
 	int v, w, y, z;
 
-	z > w
 	for (v = 48; v < 58; v++)
 	{
 		for (w = 48; w < 57; w++)
@@ -17,6 +16,7 @@ int main(void)
 			{
 				for (z = 49; z < 58; z++)
 				{
+					z > w;
 					putchar(v);
 					putchar(w);
 					putchar(32);
