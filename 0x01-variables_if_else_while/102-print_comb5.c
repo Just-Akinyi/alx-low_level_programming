@@ -16,15 +16,18 @@ int main(void)
 			{
 				for (z = 49; z < 58; z++)
 				{
-					putchar(v);
-					putchar(w);
-					putchar(32);
-					putchar(y);
-					putchar(z);
-					if (v != 57 || w != 56 || y != 57 || z != 57)
+					if ((y > v) || ((y == v) && (z > w)))
 					{
-						putchar(44);
+						putchar(v);
+						putchar(w);
 						putchar(32);
+						putchar(y);
+						putchar(z);
+						else if (v != 57 || w != 56 || y != 57 || z != 57)
+						{
+							putchar(44);
+							putchar(32);
+						}
 					}
 				}
 			}
