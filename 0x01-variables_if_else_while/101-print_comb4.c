@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- *main - Enters the program
+ *main - Entry point
  *
  * Retun - Always 0 (Success)
  */
