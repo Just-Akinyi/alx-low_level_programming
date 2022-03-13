@@ -8,23 +8,25 @@ int main(void)
 {
 	int v, w, y, z;
 
-	int v = 48
-		putchar(v);
-	int w =48
+	for (v[9] = 48; v <= w; v++)
 	{
-		putchar(w);
-		putchar(32);
-	}
-	for (y = 48; y < 58; y++)
-	{
-		for (z = 48; z < 58; z++)
+		for (w = 48; w < 58; w++)
 		{
-			putchar(y);
-			putchar(z);
-			if (y != 57 || z != 57)
+			putchar(v);
+			putchar(w);
+			putchar(32);
+			for (y = 48; y < 58; y++)
 			{
-				putchar(44);
-				putchar(32);
+				for (z = 48; z < 58; z++)
+				{
+					putchar(y);
+					putchar(z);
+					if (y != 57 || z != 57)
+					{
+						putchar(44);
+						putchar(32);
+					}
+				}
 			}
 		}
 	}
