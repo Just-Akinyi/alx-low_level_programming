@@ -6,14 +6,21 @@
  */
 int main(void)
 {
-	int y, z;
+	int v, w, y, z;
 
-	for (y = 48; y < 58; y++)
+	for v = 48
 	{
-		for (z = 48; z < 58; z++)
+		for w = 48
 		{
-			putchar(y);
-			putchar(z);
+			for (y = 48; y < 58; y++)
+			{
+				for (z = 48; z < 58; z++)
+				{
+					putchar(v);
+					putchar(w);
+					putchar(32);
+					putchar(y);
+					putchar(z);
 			if (y != 57 || z != 57)
 			{
 				putchar(44);
