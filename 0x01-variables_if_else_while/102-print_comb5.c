@@ -8,6 +8,7 @@ int main(void)
 {
 	int v, w, y, z;
 
+	z > w
 	for (v = 48; v < 58; v++)
 	{
 		for (w = 48; w < 57; w++)
