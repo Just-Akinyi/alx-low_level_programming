@@ -14,9 +14,8 @@ int main(void)
 		{
 			for (y = 48; y < 58; y++)
 			{
-				for (z = 49; z < 58; z++)
+				for (z = 49; z < 58 && z > w; z++)
 				{
-					z > w;
 					putchar(v);
 					putchar(w);
 					putchar(32);
