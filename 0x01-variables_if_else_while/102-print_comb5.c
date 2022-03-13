@@ -15,15 +15,15 @@ int main(void)
 			for (y = 48; y < 58; y++)
 			{
 				for (z = 49; z < 58; z++)
-				{
-					if ((y > v) || ((y == v) && (z > w)))
 					{
 						putchar(v);
 						putchar(w);
 						putchar(32);
-						putchar(y);
-						putchar(z);
-					}
+						 if ((y > v) || ((y == v) && (z > w)))
+						 {
+							 putchar(y);
+							 putchar(z);
+						 }
 					else if (v != 57 || w != 56 || y != 57 || z != 57)
 						{
 							putchar(44);
