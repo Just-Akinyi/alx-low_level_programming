@@ -8,9 +8,9 @@ int main(void)
 {
 	int v, w, y, z;
 
-	for (v = 48;)
+	for (v = 48; )
 	{
-		for (w = 48;)
+		for (w = 48; )
 		{
 			for (y = 48; y < 58; y++)
 			{
