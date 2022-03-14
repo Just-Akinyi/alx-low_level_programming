@@ -1,34 +1,40 @@
-#include<stdio.h>
+#include <stdio.h>
+
 /**
- * main -Entry point
+ * main - program entry
  *
- * Return: Always 0(Success)
+ * Description: print all possible combo of two 2-digit numbers
+ *
+ * Return: 0
  */
+
 int main(void)
 {
-	int v, w, y, z;
+	int i, j;
+	int a, b, c, d;
 
-	for (v = 48; v < 58; v++)
+	for (i = 0; i < 100; i++)
 	{
-		for (w = 48; w < 57; w++)
+		a = i / 10; /* tens firstnum */
+		b = i % 10; /* unit firstnum */
+
+		for (j = 0 ; j < 100; j++)
 		{
-			for (y = 48; y < 58; y++)
+			c = j / 10; /* tens secondnum */
+			d = j % 10; /* unit secondnum */
+
+			if (a < c || (a == c && b < d))
 			{
-				for (z = 49; z < 58; z++)
-					{
-						if (y > v || y == v || z > w)
-						{
-							putchar(v);
-							putchar(w);
-							putchar(32);
-							putchar(y);
-							putchar(z);
-						 }
-						if (v != 57 || w != 56 || y != 57 || z != 57)
-						{
-							putchar(44);
-							putchar(32);
-						}
+				putchar(a + '0');
+				putchar(b + '0');
+				putchar(' ');
+				putchar(c + '0');
+				putchar(d + '0');
+
+				if (!(a == 9 && b == 8))
+				{
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
@@ -36,3 +42,4 @@ int main(void)
 	putchar(10);
 	return (0);
 }
+
