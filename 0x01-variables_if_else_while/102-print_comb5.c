@@ -16,7 +16,7 @@ int main(void)
 			{
 				for (z = 49; z < 58; z++)
 					{
-						if ((y > v) || ((y == v) && (z > w)))
+						if (y > v || y == v || z > w)
 						{
 							putchar(v);
 							putchar(w);
@@ -24,8 +24,7 @@ int main(void)
 							putchar(y);
 							putchar(z);
 						 }
-						if (((y > v) || ((y == v) && (z > w))) &&
-								!((v == 57) && (w == 56) && (y == 57) && (z == 57)))
+						if (v != 57 || w != 56 || y != 57 || z != 57)
 						{
 							putchar(44);
 							putchar(32);
