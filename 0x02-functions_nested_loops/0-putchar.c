@@ -9,7 +9,6 @@
 
 int main(void)
 {
-	_putchar("_putchar");
-	_putchar("\n");
+	_putchar("%c", MyC);
 	return (0);
 }
