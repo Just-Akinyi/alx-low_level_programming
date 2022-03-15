@@ -1,1 +1,1 @@
-#define myC char *"_putchar"
+#define char *ch "_putchar"

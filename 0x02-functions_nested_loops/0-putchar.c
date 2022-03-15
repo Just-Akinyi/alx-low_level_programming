@@ -7,8 +7,11 @@
  * Return: zero (0) success
  */
 
-int main(void)
+void main(char *ch)
 {
-	putchar(myC);
+	while(*ch)
+	{
+		putchar(*ch);
+	}
 	return (0);
 }
