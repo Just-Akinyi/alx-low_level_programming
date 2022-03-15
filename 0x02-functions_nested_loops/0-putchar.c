@@ -7,7 +7,7 @@
  * Return: zero (0) success
  */
 
-void main
+void main;
 {
 	char h;
 	
