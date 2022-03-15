@@ -1,1 +1,1 @@
-#define char *ch "_putchar"
+#define h "_putchar"
