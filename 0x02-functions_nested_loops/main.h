@@ -11,6 +11,8 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
-//#ifndef FILE_main
-//#define FILE_main
-//#endif
+/**
+ *ifndef FILE_main
+ *define FILE_main
+ *endif
+ */
