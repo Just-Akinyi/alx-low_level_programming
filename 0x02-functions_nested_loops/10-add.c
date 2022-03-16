@@ -7,12 +7,7 @@
   *
   * Return: Integer value
   */
-int add(int sum)
+int add(int i + int j);
 {
-	int i;
-	int j;
-	int sum;
-
-	for(sum = i + j)
-	return (sum);
+	return (int i + int j);
 }
