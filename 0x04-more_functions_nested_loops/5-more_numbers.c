@@ -6,7 +6,7 @@
  * @n: is the number of times to print
  * @x: is values to be printed
  */
-void more_numbers(void);
+void more_numbers(void)
 {
 	int n, x;
 
