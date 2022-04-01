@@ -7,6 +7,6 @@
 int main(int argc, char *argv[])
 {
 	(void)argv;
-	_putchar("argc = %d/n", argc);
+	printf("argc = %d/n", argc);
 		return (0);
 }
