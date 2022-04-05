@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -11,22 +10,24 @@
  */
 char *_strdup(char *str)
 {
-	char *d;
-	int i, len = 0;
+	char *duplicate;
+	int index, len = 0;
 
 	if (str == NULL)
 		return (NULL);
 
-	for (i = 0; str[i]; i++)
+	for (index = 0; str[index]; index++)
 		len++;
 
-	d = malloc(sizeof(char) * (len + 1));
+	duplicate = malloc(sizeof(char) * (len + 1));
 
-	if (d == NULL)
+	if (duplicate == NULL)
 		return (NULL);
 
-	for (i = 0; str[i]; i++)
-		d[i] = str[i];
+	for (index = 0; str[index]; index++)
+		duplicate[index] = str[index];
 
-	return (d);
+	duplicate[len] = '\0';
+
+	return (duplicate);
 }
