@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
  /**
-  * _strdup - returns pointer to a new string
+  * _strdup - duplicate a string
   *
-  * @str - 
+  * @str - string to duplicate
   * return - new string
   **/
 
@@ -11,10 +11,11 @@ char *_strdup(char *str)
 {
 	char *s;
 	s = (char *)malloc(sizeof(char) + 1);
+
 	if (str == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
-	return(s);
+	return (s);
 	free(s);
 }
