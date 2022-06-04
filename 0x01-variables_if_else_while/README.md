@@ -1,1 +1,1 @@
-this is a directory for variables
+conditional statements
