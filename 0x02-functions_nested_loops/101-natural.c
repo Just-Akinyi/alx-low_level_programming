@@ -3,7 +3,7 @@
 /**
   * main - Prints the sum of all multiples of 3 or 5 up to 1024
   *
-  * Return: Always (Success)
+  * Return: void
   */
 int main(void)
 {
@@ -20,5 +20,4 @@ int main(void)
 	}
 
 	printf("%d\n", z);
-	return (0);
 }
