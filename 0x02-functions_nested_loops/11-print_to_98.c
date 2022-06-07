@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * print_to_98 - Prints all natural numbers from n to 98
- * @n: n type of integer
+ * @n: integer with a range
  *
  * Return: void
  */
