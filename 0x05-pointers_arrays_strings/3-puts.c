@@ -1,5 +1,3 @@
-#include <string.h>
-#include <stdio.h>
 #include "main.h"
 /**
  * _puts - Prints a string
