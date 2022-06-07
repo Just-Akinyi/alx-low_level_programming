@@ -3,7 +3,7 @@
 #include "main.h"
 /**
  * _puts - Prints a string
- * @str: argument str to print
+ * @*str: pointer to variable of type char
  *
  * Return: void
  */
