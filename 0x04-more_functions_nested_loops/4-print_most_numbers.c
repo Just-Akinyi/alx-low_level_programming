@@ -5,7 +5,7 @@
   *
   * Description: Prints the numbers excluding 2 and 4
   *
-  * Return: The numbers since 0 up to 9
+  * Return: void
   */
 void print_most_numbers(void)
 {
