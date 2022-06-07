@@ -2,7 +2,8 @@
 /**
  * print_alphabet - Print lower case alphabet
  *
- * Return: void
+ * void: function takes no arguments
+ * Return: Void
  */
 void print_alphabet(void)
 {
