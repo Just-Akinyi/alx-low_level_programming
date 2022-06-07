@@ -2,9 +2,9 @@
 
 /**
   * _abs - Computes the absolute value of an integer.
-  * @n: The number to be computed.
+  * @n: computed integer.
   *
-  * Return: Absolute value of number or zero
+  * Return: Absolute value of number or 0
   */
 int _abs(int n)
 {
