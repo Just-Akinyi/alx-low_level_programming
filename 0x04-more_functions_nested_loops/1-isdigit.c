@@ -2,9 +2,9 @@
 
 /**
   * _isdigit - Check if a character is a digit
-  * @c: The number to be checked
+  * @c: The integer to be checked
   *
-  * Return: 1 for a character that will be a digit or 0 for any else
+  * Return: 1 if digit 0 otherwise 
   */
 int _isdigit(int c)
 {
