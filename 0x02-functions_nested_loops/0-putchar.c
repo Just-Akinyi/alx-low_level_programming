@@ -2,8 +2,8 @@
 /**
  * main - Putchar
  *
- * _putchar print the characters given
- * Return: Always 0 (Success)
+ * _putchar: prints the characters given
+ * Return: 0 (Success)
  */
 int main(void)
 {
