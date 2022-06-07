@@ -2,12 +2,15 @@
 
 /**
   * add - Adds two values
-  * @i: The first number to be computed
-  * @j: The second number to be computed
+  * @i: The first integer
+  * @j: The second integer
   *
-  * Return: Integer value
+  * Return: the sum
   */
 int add(int i, int j)
+	int sum;
+
 {
-	return (i + j);
+	sum = i + j;
+	return (sum);
 }
