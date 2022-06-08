@@ -1,1 +1,1 @@
-this is on pointers
+C pointers, arrays and strings
