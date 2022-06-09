@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * is_prime_number - returns the natural square root of a number
+ * is_prime_number - returns the natural square root of a number.
  * @n: param n
  * Return: 1 or 0 if prime or not prime respectively
  */
