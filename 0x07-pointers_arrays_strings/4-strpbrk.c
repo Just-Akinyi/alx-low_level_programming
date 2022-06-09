@@ -2,7 +2,7 @@
 #define NULL 0
 
 /**
- * _strpbrk - searches a string for any of a set of bytes
+ * _strpbrk - searches a string for any of a set of bytes.
  * @s: string
  * @accept: chars to compare
  * Return: pointer from the initial segment of match
