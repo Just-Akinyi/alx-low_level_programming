@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_chessboard - print chessboard
+* print_chessboard - print chessboard.
 * @a: 8 by 8 array
 */
 
