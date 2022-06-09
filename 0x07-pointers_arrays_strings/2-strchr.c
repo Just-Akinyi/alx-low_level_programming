@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strchr - copies n bytes from the memory area src to memory area dest
+ * _strchr - locates a character in a string
  *
  * @s: pointer to string
  * @c: character
