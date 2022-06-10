@@ -1,22 +1,60 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * length - returns length of string
+ * @s: string
+ * Return: integer length
  */
-int main(void)
-{
-    int r;
 
-    r = is_palindrome("level");
-    printf("%d\n", r);
-    r = is_palindrome("redder");
-    printf("%d\n", r);
-    r = is_palindrome("test");
-    printf("%d\n", r);
-    r = is_palindrome("step on no pets");
-    printf("%d\n", r);
-    return (0);
+int length(char *s)
+{
+
+	if (*s != '\0')
+	{
+		return (1 + length(s + 1));
+	}
+	else
+	{
+		return (0);
+	}
+}
+
+/**
+ * compare - compare characters
+ * @s: string
+ * @beg: beginning index
+ * @end: end index
+ * Return: integer indicating non-match 0, match 1
+ */
+
+int compare(char *s, int beg, int end)
+{
+	if (s[beg] != s[end])
+		return (0);
+	else if (beg == end && s[beg] == s[end])
+		return (1);
+	else if (beg == end - 1 && s[beg] == s[end])
+		return (1);
+	else
+		return (compare(s, beg + 1, end - 1));
+}
+
+/**
+ * is_palindrome - checks is string is a palindrome
+ * @s: string
+ * Return: integer, 1 if palindrom, 0 if not
+ */
+
+int is_palindrome(char *s)
+{
+	int len, beg, end;
+
+	len = length(s);
+	beg = 0;
+	end = len - 1;
+
+	if (len == 0 || len == 1)
+		return (1);
+	else
+		return (compare(s, beg, end));
 }
