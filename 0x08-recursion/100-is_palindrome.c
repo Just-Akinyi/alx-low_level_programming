@@ -1,57 +1,22 @@
 #include "main.h"
-
-int check_palindrome(char *s);
-
-/**
-  * is_palindrome - Returns if a string is palindrome
-  * @s: the string value to be checked
-  *
-  * Return: integer value
-  */
-int is_palindrome(char *s)
-{
-	if (*s == '0')
-		return (1);
-
-	return (check_palindrome(s));
-}
+#include <stdio.h>
 
 /**
-  * check_palindrome - Check if a string is palindrome
-  * @s: the string value to be checked
-  *
-  * Return: integer value
-  */
-int check_palindrome(char *s)
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
-	int l = _strlen_recursion(s) - 1;
+    int r;
 
-	if (*s == s[l])
-	{
-		s++;
-		l--;
-	}
-	else
-	{
-		return (0);
-	}
-
-	return (1);
-}
-
-/**
-  * _strlen_recursion - Get the length of a string
-  * @s: the string to get the length
-  *
-  * Return: the string length
-  */
-int _strlen_recursion(char *s)
-{
-	if (*s == '\0')
-	{
-		return (0);
-	}
-
-	s++;
-	return (_strlen_recursion(s) + 1);
+    r = is_palindrome("level");
+    printf("%d\n", r);
+    r = is_palindrome("redder");
+    printf("%d\n", r);
+    r = is_palindrome("test");
+    printf("%d\n", r);
+    r = is_palindrome("step on no pets");
+    printf("%d\n", r);
+    return (0);
 }
