@@ -1,47 +1,38 @@
 #include "main.h"
-
-int cmp(char *c1, char *c2);
-
-/**
-* escwild - escapes wildcard and increments string 1 if fails to match
-* @c1: string 1
-* @wild: string 2
-* Return: go through string 1 until it finds a match or '\0' value is found
-*/
-int escwild(char *c1, char *wild)
-{
-if (*c1 == '\0')
-return (cmp(c1, wild));
-return (cmp(c1, wild) || escwild(++c1, wild));
-}
+#include <stdio.h>
 
 /**
-* cmp - compare string 1 and string 2 using wildcard
-* @c1: string 1
-* @c2: string 2
-* Return: return 0 if no match return 1 if match
-*/
-int cmp(char *c1, char *c2)
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
-if (*c1 == *c2 || *c2 == '*')
-{
-if (*c2 == '*')
-return (escwild(c1, ++c2));
-else if (*c1 == '\0')
-return (1);
-else
-return (cmp(++c1, ++c2));
-}
-return (0);
-}
+    int r;
 
-/**
-* wildcmp - compare string 1 and string 2 using wildcard
-* @s1: string 1
-* @s2: string 2
-* Return: return 0 if no match return 1 if match
-*/
-int wildcmp(char *s1, char *s2)
-{
-return (cmp(s1, s2));
+    r = wildcmp("main.c", "*.c");
+    printf("%d\n", r);
+    r = wildcmp("main.c", "m*a*i*n*.*c*");
+    printf("%d\n", r);
+    r = wildcmp("main.c", "main.c");
+    printf("%d\n", r);
+    r = wildcmp("main.c", "m*c");
+    printf("%d\n", r);
+    r = wildcmp("main.c", "ma********************************c");
+    printf("%d\n", r);
+    r = wildcmp("main.c", "*");
+    printf("%d\n", r);
+    r = wildcmp("main.c", "***");
+    printf("%d\n", r);
+    r = wildcmp("main.c", "m.*c");
+    printf("%d\n", r);
+    r = wildcmp("main.c", "**.*c");
+    printf("%d\n", r);
+    r = wildcmp("main-main.c", "ma*in.c");
+    printf("%d\n", r);
+    r = wildcmp("main", "main*d");
+    printf("%d\n", r);
+    r = wildcmp("abc", "*b");
+    printf("%d\n", r);
+    return (0);
 }
