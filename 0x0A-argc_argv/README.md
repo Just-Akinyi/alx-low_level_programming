@@ -1,1 +1,1 @@
-directory for arguments
+Arguments to main
