@@ -7,7 +7,7 @@
   * @size: The size of the array
   * @c: The char to fill in the array
   *
-  * Return: The array filled
+  * Return: An array
   */
 
 char *create_array(unsigned int size, char c)
