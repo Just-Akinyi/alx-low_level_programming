@@ -108,6 +108,6 @@ void print_all(const char * const format, ...)
 	}
 
 	printf("\n");
-i
+
 	va_end(args);
 }
