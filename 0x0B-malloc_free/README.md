@@ -1,1 +1,1 @@
-memory allocation
+allocating and freeing memory
