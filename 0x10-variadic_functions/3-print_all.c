@@ -73,7 +73,7 @@ void print_string(va_list arg)
  * @...: A variable number of arguments to be printed.
  *
  * Description: Any argument not of type char, int, float,
- *              or char * is ignored.
+ *              or char * is ignored.function that prints strings, followed by a new line
  *              If a string argument is NULL, (nil) is printed instead.
  */
 void print_all(const char * const format, ...)
@@ -108,6 +108,6 @@ void print_all(const char * const format, ...)
 	}
 
 	printf("\n");
-
+i
 	va_end(args);
 }
