@@ -1,48 +1,56 @@
 #include "main.h"
 #include <stdlib.h>
-
-#define ERR_MSG "Error"
-
-int _isdigit(char *s);
-
+#include <stdio.h>
 /**
- * main - takes two numbers as arguments and outputs the product.
- * @argc: the number of arguments including name of program.
- * @argv: an array of arguments
- *
- * Return: 0 if successful.
+ * _atoi - Converts a character array to an integer
+ * @s: character array to convert
+ * Return: returns integer from array, returns 0 if none found
+ */
+int _atoi(char *s)
+{
+int retval, i, neg;
+i = 0;
+retval = 0;
+neg = -1;
+while (s[i] != '\0' && (s[i] < '0' || s[i] > '9'))
+{
+if (s[i] == '-')
+neg *= -1;
+i++;
+}
+while (s[i] != '\0' && (s[i] >= '0' && s[i] <= '9'))
+retval = (retval * 10) - (s[i++] - '0');
+return (retval *neg);
+}
+/**
+ * main - multiplies two positive numbers
+ * @argc: n arguments
+ * @argv: args
+ * Return: int
  */
 int main(int argc, char *argv[])
 {
-	int i;
-	if (argc != 3)
-	{
-		for (i = 0; ERR_MSG[i] != '\0'; i++)
-			_putchar(ERR_MSG[i]);
-		_putchar(10);
-		exit(98);
-	}
-	if (_isdigit(argv[1]) == 0)
-		printf("%s\n", argv[1]);
-		
-	return (0);
-}
-
-/**
- * isdigit - checks if string is a number or not
- * @s: the string to be checked
- *
- * Return: 1 if true, else 0.
- */
-
-int _isdigit(char *s)
+int a, b, i, j;
+unsigned long mul;
+if (argc != 3)
 {
-	while (*s)
-	{
-		if (*s < 48 || *s > 57)
-			return (1);
-		s++;
-	}
-	return (0);
+printf("Error\n");
+exit(98);
 }
-
+for (i = 1; i < argc; i++)
+{
+for (j = 0; argv[i][j] != '\0'; j++)
+{
+if (argv[i][j] > 57 || argv[i][j] < 48)
+{
+printf("Error\n");
+exit(98);
+}
+}
+}
+a = _atoi(argv[1]);
+b = _atoi(argv[2]);
+mul = a *b;
+printf("%lu\n", mul);
+return (0);
+}
