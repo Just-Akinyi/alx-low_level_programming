@@ -1,1 +1,1 @@
-C-files and directories
+dynamic libraries
