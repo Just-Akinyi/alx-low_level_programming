@@ -10,7 +10,6 @@ SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 # the name of the executable
 NAME = school
-# the program to delete files
 RM = rm -f
 # recompile only the updated source files
 all: $(OBJ)
