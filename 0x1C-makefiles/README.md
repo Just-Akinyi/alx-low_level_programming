@@ -1,3 +1,1 @@
-# build an executable named school
-all: main.c school.c
-    gcc main.c school.c -o school
+make files
