@@ -1,6 +1,3 @@
 # build an executable named school
-all:
-    gcc -g -Wall -o school
-
-  <!-- clean: 
-	  $(RM) school -->
+all: main.c school.c
+    gcc main.c school.c -o school
