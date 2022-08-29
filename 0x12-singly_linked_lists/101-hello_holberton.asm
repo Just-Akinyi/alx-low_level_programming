@@ -14,4 +14,4 @@ main:
 
 section .rodata
 	msg: db "Hello, Holberton", 10
-	msglen: equ $ - ms
+	msglen: equ $ - msg
